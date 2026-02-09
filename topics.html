@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Topics
+        </title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="sheetstyle.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <header>
+            <h2>Topics</h2>
+        </header>
+        <p>Explore the core topics of mathematics that are essential for understanding higher-level concepts. 
+Each topic includes explanations, examples, and exercises to help you learn effectively.
+</p>
+<section>
+    <h3>Matrices</h3>
+    <p>
+    A matrix is a rectangular arrangement of numbers, symbols, or expressions in rows and columns. 
+    The size of a matrix is defined by the number of rows and columns it contains. 
+    For example, a 2x3 matrix has 2 rows and 3 columns.
+    </p>
+
+    <p>
+    Matrices are very useful in mathematics because they allow us to organize data efficiently and perform calculations systematically. 
+    One of the simplest operations is matrix addition. Two matrices can be added only if they have the same dimensions. 
+    For example, consider these two 2x2 matrices:
+    <br>
+    Matrix A = [[1, 2], [3, 4]]<br>
+    Matrix B = [[5, 6], [7, 8]]
+    <br>
+    Their sum, A + B, is [[6, 8], [10, 12]].
+    </p>
+
+    <p>
+    Another basic operation is matrix subtraction, which works similarly to addition. 
+    Multiplying a matrix by a scalar means multiplying each element of the matrix by that number. 
+    For instance, 2 * A = [[2, 4], [6, 8]].
+    </p>
+
+    <p>
+    Matrix multiplication is slightly more complex. The number of columns in the first matrix must equal the number of rows in the second matrix. 
+    For example, if Matrix C = [[1, 2, 3], [4, 5, 6]] and Matrix D = [[7, 8], [9, 10], [11, 12]], 
+    then the product C * D = [[58, 64], [139, 154]].
+    </p>
+
+    <p>
+    One more important concept is the transpose of a matrix. The transpose of a matrix is obtained by swapping its rows and columns. 
+    For example, the transpose of Matrix A = [[1, 2], [3, 4]] is [[1, 3], [2, 4]].
+    </p>
+
+    <p>
+    Matrices are widely used in many real-world applications such as computer graphics, physics simulations, engineering problems, and economics. 
+    They help represent complex data in a simple and structured way, making calculations faster and easier to manage.
+    </p>
+</section>
+
+<section>
+    <h3>Determinants</h3>
+    <p>
+    The determinant is a special number that can be calculated from a square matrix. 
+    Determinants are important in linear algebra because they help us determine whether a system of linear equations has a unique solution, and whether a matrix is invertible.
+    </p>
+
+    <p>
+    For a 2x2 matrix, the determinant is calculated as follows. 
+    If Matrix A = [[a, b], [c, d]], then the determinant of A, written as det(A), is:
+    <br>
+    det(A) = a*d - b*c
+    <br>
+    For example, if A = [[3, 5], [2, 7]], then det(A) = (3*7) - (5*2) = 21 - 10 = 11.
+    </p>
+
+    <p>
+    Determinants of larger matrices, such as 3x3, are calculated using a method called cofactor expansion. 
+    For example, if B = [[1, 2, 3], [0, 4, 5], [1, 0, 6]], the determinant is calculated as:
+    <br>
+    det(B) = 1*(4*6 - 5*0) - 2*(0*6 - 5*1) + 3*(0*0 - 4*1) = 1*24 - 2*(-5) + 3*(-4) = 24 + 10 - 12 = 22.
+    </p>
+
+    <p>
+    Determinants have several key properties that make calculations easier: 
+    <br>
+    - Swapping two rows changes the sign of the determinant.  
+    - Multiplying a row by a scalar multiplies the determinant by that scalar.  
+    - If a matrix has a row of zeros, its determinant is zero.  
+    - The determinant of a triangular matrix is the product of its diagonal elements.
+    </p>
+
+    <p>
+    Determinants are used in solving systems of equations with Cramer's rule, finding inverses of matrices, and in many applications in physics and engineering, such as calculating area, volume, and transformations.
+    </p>
+</section>
+
+<section>
+    <h3>Matrix Equations</h3>
+    <p>
+    A matrix equation is an equation in which the unknowns are matrices. 
+    These equations are often used to represent and solve systems of linear equations in a compact and organized way.
+    </p>
+
+    <p>
+    The simplest form of a matrix equation is:
+    <br>
+    A * X = B
+    <br>
+    where A and B are known matrices, and X is the unknown matrix that we want to find. 
+    To solve for X, we often use the inverse of matrix A (if it exists) and multiply both sides of the equation:
+    <br>
+    X = A<sup>-1</sup> * B
+    </p>
+
+    <p>
+    For example, consider the system of two equations with two unknowns:
+    <br>
+    2x + 3y = 8  
+    1x + 2y = 5
+    <br>
+    We can write it in matrix form as:
+    <br>
+    A = [[2, 3], [1, 2]], B = [[8], [5]], X = [[x], [y]]
+    <br>
+    Then the matrix equation is: A * X = B
+    </p>
+
+    <p>
+    To solve for X, we calculate the inverse of A:
+    <br>
+    A<sup>-1</sup> = [[2, -3], [-1, 2]]  (scaled appropriately by 1/det(A))  
+    Multiplying A<sup>-1</sup> * B gives X = [[1], [2]], which means x = 1 and y = 2.
+    </p>
+
+    <p>
+    Matrix equations can also involve multiple unknown matrices or more complex operations, but the principle remains the same: 
+    express the system compactly, check for invertibility, and solve using matrix operations.
+    </p>
+
+    <p>
+    These equations are widely used in computer graphics, engineering simulations, economics models, and anywhere systems of linear equations arise.
+    </p>
+</section>
+
+<section>
+    <h3>Vectors</h3>
+    <p>
+    A vector is a mathematical quantity that has both magnitude (length) and direction. 
+    Vectors are used to represent physical quantities such as force, velocity, and displacement. 
+    Unlike scalars, which have only magnitude, vectors provide information about direction as well.
+    </p>
+
+    <p>
+    Vectors are usually written in component form. 
+    For example, a 2-dimensional vector can be written as **v = [3, 4]**, where 3 is the x-component and 4 is the y-component. 
+    The magnitude of this vector can be calculated using the Pythagorean theorem:
+    <br>
+    |v| = √(3² + 4²) = √(9 + 16) = 5
+    </p>
+
+    <p>
+    One basic operation with vectors is addition. 
+    Two vectors of the same dimension can be added by adding their corresponding components. 
+    For example, if u = [1, 2] and v = [3, 4], then their sum is:
+    <br>
+    u + v = [1+3, 2+4] = [4, 6]
+    </p>
+
+    <p>
+    Scalar multiplication is another common operation. 
+    Multiplying a vector by a scalar changes its magnitude but not its direction. 
+    For instance, 2 * u = 2 * [1, 2] = [2, 4].
+    </p>
+
+    <p>
+    Vectors can also be represented graphically as arrows, where the length represents magnitude and the arrow points in the direction of the vector. 
+    This is useful in physics and engineering to visualize forces and motion.
+    </p>
+
+    <p>
+    Understanding vectors is essential for fields such as physics, engineering, computer graphics, and 3D modeling. 
+    Mastering vector operations helps solve problems involving motion, forces, and spatial reasoning.
+    </p>
+</section>
+
+<section>
+    <h3>Vector Cross Product</h3>
+    <p>
+    The cross product of two vectors is an operation that produces a third vector which is perpendicular to both original vectors. 
+    It is used in 3-dimensional space to find directions, areas of parallelograms, and in physics to describe torque and rotational forces.
+    </p>
+
+    <p>
+    If we have two 3D vectors, u = [u1, u2, u3] and v = [v1, v2, v3], the cross product, written as u × v, is calculated using the determinant of a 3x3 matrix:
+    <br>
+    u × v = | i    j    k  |<br>
+             | u1  u2  u3 |<br>
+             | v1  v2  v3 |
+    <br>
+    where i, j, k are the unit vectors along the x, y, z axes.
+    </p>
+
+    <p>
+    For example, let u = [1, 2, 3] and v = [4, 5, 6].  
+    Then the cross product u × v is:
+    <br>
+    u × v = [(2*6 - 3*5), (3*4 - 1*6), (1*5 - 2*4)] = [-3, 6, -3]
+    </p>
+
+    <p>
+    The resulting vector [-3, 6, -3] is perpendicular to both u and v. 
+    Its magnitude represents the area of the parallelogram formed by u and v:
+    <br>
+    |u × v| = √((-3)² + 6² + (-3)²) = √(9 + 36 + 9) = √54 ≈ 7.35
+    </p>
+
+    <p>
+    The cross product is widely used in physics to calculate torque, rotational motion, and in computer graphics to determine normals to surfaces. 
+    Understanding the cross product helps in solving 3D geometry problems and visualizing spatial relationships.
+    </p>
+</section>
+
+<section>
+    <h3>Analytic Geometry</h3>
+    <p>
+    Analytic geometry, also called coordinate geometry, studies geometric objects using a coordinate system. 
+    By representing points, lines, and shapes with coordinates, we can use algebraic methods to solve geometric problems.
+    </p>
+
+    <p>
+    A point in 2D space is represented as (x, y), and in 3D space as (x, y, z). 
+    For example, the points A = (1, 2) and B = (4, 6) lie in a 2-dimensional plane. 
+    Using these coordinates, we can calculate distances, slopes, and midpoints.
+    </p>
+
+    <p>
+    The distance between two points A(x₁, y₁) and B(x₂, y₂) is given by the formula:
+    <br>
+    d = √((x₂ - x₁)² + (y₂ - y₁)²)
+    <br>
+    For our points A = (1, 2) and B = (4, 6):
+    <br>
+    d = √((4-1)² + (6-2)²) = √(3² + 4²) = √25 = 5
+    </p>
+
+    <p>
+    The equation of a line passing through two points A(x₁, y₁) and B(x₂, y₂) can be written as:
+    <br>
+    y - y₁ = ((y₂ - y₁)/(x₂ - x₁)) * (x - x₁)
+    <br>
+    For example, the line through A = (1, 2) and B = (4, 6) has slope m = (6-2)/(4-1) = 4/3, 
+    so its equation is y - 2 = (4/3)(x - 1).
+    </p>
+
+    <p>
+    Analytic geometry also allows finding intersections of lines, equations of circles, planes in 3D, and other curves using algebra. 
+    This combination of algebra and geometry provides powerful tools for solving complex problems in mathematics, physics, and engineering.
+    </p>
+
+    <p>
+    By mastering analytic geometry, learners can better visualize mathematical concepts and apply them to real-world spatial problems.
+    </p>
+</section>
+<p>Work through these topics to strengthen your understanding of mathematics. Practice the examples provided and challenge yourself with exercises.
+</p>
+    </body>
+     <footer>MathWorld</footer>
+</html>
